@@ -14,7 +14,7 @@ def main():
     st.title("PROJECT PJJ DA DJPb BATCH II : Analisis Proyeksi Indikator Makro")
     
     menu = ['Model Evaluation','Correlation Matrix','Prediksi Inflasi','Prediksi USD','Prediksi Oil_Price','Prediksi CCI']
-    pjjda= Image.open('projectda1.png')
+    pjjda= Image.open('Projectdaputih1.png')
     klp= Image.open('kelompok.png')
     st.sidebar.image(pjjda)
     st.sidebar.image(klp)
