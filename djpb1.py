@@ -13,14 +13,19 @@ def main():
     st.set_page_config(layout="wide")
     st.title("PROJECT PJJ DA DJPb BATCH II : Analisis Proyeksi Indikator Makro")
     
-    menu = ['Model Evaluation','Correlation Matrix','Prediksi Inflasi','Prediksi USD','Prediksi Oil_Price','Prediksi CCI']
+    menu = ['Pilih Menu','Model Evaluation','Correlation Matrix','Prediksi Inflasi','Prediksi USD','Prediksi Oil_Price','Prediksi CCI']
     pjjda= Image.open('Projectdaputih1.png')
-    #klp= Image.open('kelompok.png')
+    data= Image.open('Sidebar_trans.png')
     st.sidebar.image(pjjda)
+    st.sidebar.image(data)
     #st.sidebar.image(klp)
     
     choice = st.sidebar.selectbox("Select Menu", menu)
     C1, C2, C3, C4 = st.columns((2,2,2,2))
+    if choice == "Pilih Menu":
+        st.subheader("Presented by")
+        me=Image.open('kelompok.png')
+        st.image(me)
     if choice == "Model Evaluation":
         st.subheader("Model Evaluation")
         me=Image.open('Model_Evaluation.png')
