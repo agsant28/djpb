@@ -26,6 +26,7 @@ def main():
         st.subheader("Presented by")
         me=Image.open('kelompok.png')
         st.image(me)
+        st.subheader(f"Silahkan Pilih Menu di Samping Kiri Bawah")
     if choice == "Model Evaluation":
         st.subheader("Model Evaluation")
         me=Image.open('Model_Evaluation.png')
