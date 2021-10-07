@@ -15,9 +15,9 @@ def main():
     
     menu = ['Model Evaluation','Correlation Matrix','Prediksi Inflasi','Prediksi USD','Prediksi Oil_Price','Prediksi CCI']
     pjjda= Image.open('Projectdaputih1.png')
-    klp= Image.open('kelompok.png')
+    #klp= Image.open('kelompok.png')
     st.sidebar.image(pjjda)
-    st.sidebar.image(klp)
+    #st.sidebar.image(klp)
     
     choice = st.sidebar.selectbox("Select Menu", menu)
     C1, C2, C3, C4 = st.columns((2,2,2,2))
